@@ -1,0 +1,9 @@
+Este archivo describe los bugs encontrados y las soluciones aportadas.
+
+#0001   
+    
+    Síntoma: El temporizador de minutos no puede pasar de 255, al hacerlo se reinicia a 0.
+
+    Error: El tipo de dato de 'EEPROM_TIMER_DURATION_UINT16_T' es uint8_t y se desborda.
+
+    Solución: Cambiar el tipo de datos a uint16_t.
