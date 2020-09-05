@@ -1,6 +1,6 @@
 // Identificación del dispositivo. Para que sea único, pongo en el nombre la fecha de fabricación.
-#define DEVICE_ID "NODEMCU-20191215"
-#define DEVICE_SSID "TOTEESPCFG20191215"   // El SSID debe ser único, pongo la fecha de fabricación (15/12/2019) como GUID.
+#define DEVICE_ID "NODEMCU-20190307"
+#define DEVICE_SSID "TOTEESPCFG20190307"   // El SSID debe ser único, pongo la fecha de fabricación (07/03/2019) como GUID.
 
 // Si se habilita el LEVEL_2, habilitar también en LEVEL_1
 
