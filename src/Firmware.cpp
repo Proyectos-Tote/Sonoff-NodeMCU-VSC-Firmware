@@ -237,11 +237,11 @@ ToteAsyncDelay myNodeRedDashboardRefreshTimer(DASHBOARD_REFRESH_INTERVAL, refhes
 
 // Creo una estructura que servirá para almacenar y recuperar datos en la EEPROM
 struct {
-	uint8_t			EEPROM_MAGIC_NUMBER;			// Truco, amaceno el valor 69 si ya se ha inicializado los valores de la eeprom al menos una vez.
-	uint8_t			EEPROM_TIMER_ENABLED_UINT8_T;	// Indica si el temporizador está activado.
-	uint8_t			EEPROM_TIMER_H_INIT_UINT8_T;	// Hora a la que se activa el temporizador.
-	uint8_t			EEPROM_TIMER_M_INIT_UINT8_T;	// Minutos (de la hora anterior) a la que se activa el temporizador.
-	uint8_t		EEPROM_TIMER_DURATION_UINT16_T; // Duración del temporizador en minutos (max 1440 o 24 horas)
+	uint8_t		EEPROM_MAGIC_NUMBER;				// Truco, amaceno el valor 69 si ya se ha inicializado los valores de la eeprom al menos una vez.
+	uint8_t		EEPROM_TIMER_ENABLED_UINT8_T;		// Indica si el temporizador está activado.
+	uint8_t		EEPROM_TIMER_H_INIT_UINT8_T;		// Hora a la que se activa el temporizador.
+	uint8_t		EEPROM_TIMER_M_INIT_UINT8_T;		// Minutos (de la hora anterior) a la que se activa el temporizador.
+	uint16_t	EEPROM_TIMER_DURATION_UINT16_T; 	// Duración del temporizador en minutos (max 1440 o 24 horas)
 } myEEPROMData;
 
 
